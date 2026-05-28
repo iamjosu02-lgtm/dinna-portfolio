@@ -27,11 +27,10 @@ PORTFOLIO/
 └── vercel.json
 ```
 
-## 1. Add video backgrounds
+## 1. Video backgrounds (done)
 
-Copy your videos into `frontend/assets/videos/`:
-
-- wall1.mp4, wall2.mp4, … wall7.mp4
+Videos are in `frontend/assets/videos/` (wall1.mp4 … wall7.mp4).
+Original copies may remain in the project root; only the `frontend/assets/videos/` copies are deployed.
 
 ## 2. Run locally
 

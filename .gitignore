@@ -6,3 +6,4 @@ Thumbs.db
 
 # Keep videos only in frontend/assets/videos (avoid duplicate in repo root)
 /wall*.mp4
+.vercel

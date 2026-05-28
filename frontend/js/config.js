@@ -5,7 +5,7 @@
 const CONFIG = {
   API_BASE_URL: window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? 'http://localhost:5000'
-    : 'https://YOUR-RENDER-APP-NAME.onrender.com',
+    : 'https://backend-ruby-ten-45.vercel.app',
 
   VIDEOS: [
     'assets/videos/wall1.mp4',

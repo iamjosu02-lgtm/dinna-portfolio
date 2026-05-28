@@ -10,6 +10,9 @@ const allowedOrigins = [
   'http://127.0.0.1:5500',
   'http://localhost:3000',
   'http://127.0.0.1:3000',
+  'https://dinna-portfolio.vercel.app',
+  'https://frontend-ashen-eight-46.vercel.app',
+  'https://dinna-portfolio-api.onrender.com',
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
@@ -102,6 +105,10 @@ app.use((req, res) => {
   res.status(404).json({ error: 'Route not found' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Portfolio API running on port ${PORT}`);
-});
+if (process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`Portfolio API running on port ${PORT}`);
+  });
+}
+
+module.exports = app;
