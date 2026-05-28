@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dinna Michael — Portfolio. Web developer, cloud computing student." />
+  <title>Dinna Michael | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="video-bg" aria-hidden="true">
+    <video id="bg-video" autoplay muted loop playsinline></video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <header class="header" id="header">
+    <a href="#home" class="logo">
+      <span class="logo-icon">D</span>
+      <span class="logo-text">Dinna <span class="accent">| Developer</span></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#qualifications">Qualifications</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home" data-video="0">
+      <div class="hero-content reveal">
+        <div class="hero-accent-line"></div>
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-title">Dinna <span class="accent">Michael</span> <span class="wave">👋</span></h1>
+        <p class="hero-subtitle">
+          I develop web applications and cloud solutions with modern technologies and frameworks.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#projects" class="btn btn-outline">View projects</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-1">
+        <div class="desk-setup">
+          <div class="monitor">
+            <div class="code-screen">
+              <span class="code-line c1">const developer = "Dinna Michael";</span>
+              <span class="code-line c2">const passion = "Cloud & Web";</span>
+              <span class="code-line c3">export default { developer, passion };</span>
+            </div>
+          </div>
+          <div class="desk-glow"></div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span class="mouse"></span>
+      </a>
+    </section>
+
+    <!-- About / Profile -->
+    <section class="section about" id="about" data-video="1">
+      <div class="container">
+        <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="about-avatar">
+              <span>DM</span>
+            </div>
+          </div>
+          <div class="about-text reveal delay-1">
+            <h3>Dinna Michael</h3>
+            <p class="role">Software Developer & Cloud Computing Student</p>
+            <p>
+              Passionate about building elegant digital experiences and deploying scalable
+              applications on the cloud. I combine frontend craft with backend APIs and
+              real-world deployment workflows on platforms like Vercel and Render.
+            </p>
+            <ul class="about-info">
+              <li><strong>Phone:</strong> <a href="tel:+254764709993">0764709993</a></li>
+              <li><strong>Handle:</strong> dinna@170</li>
+            </ul>
+            <div class="social-links">
+              <a href="https://github.com/dinna170" target="_blank" rel="noopener" title="GitHub">GitHub</a>
+              <a href="https://instagram.com/dinna170" target="_blank" rel="noopener" title="Instagram">Instagram</a>
+              <a href="https://twitter.com/dinna170" target="_blank" rel="noopener" title="Twitter">Twitter</a>
+              <a href="https://linkedin.com/in/dinna170" target="_blank" rel="noopener" title="LinkedIn">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills / Services -->
+    <section class="section skills" id="skills" data-video="2">
+      <div class="container">
+        <h2 class="section-title reveal">Skills & <span class="accent">Expertise</span></h2>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon" data-icon="web"></div>
+            <h3>Web Developer</h3>
+            <p>HTML, CSS, JavaScript, responsive UI</p>
+          </article>
+          <article class="skill-card reveal delay-1">
+            <div class="skill-icon" data-icon="app"></div>
+            <h3>App Developer</h3>
+            <p>React, mobile-first interfaces</p>
+          </article>
+          <article class="skill-card reveal delay-2">
+            <div class="skill-icon" data-icon="backend"></div>
+            <h3>Backend Developer</h3>
+            <p>Node.js, REST APIs, Express</p>
+          </article>
+          <article class="skill-card reveal delay-3">
+            <div class="skill-icon" data-icon="cloud"></div>
+            <h3>Cloud & DevOps</h3>
+            <p>Vercel, Render, deployment pipelines</p>
+          </article>
+        </div>
+        <div class="tech-tags reveal">
+          <span>JavaScript</span><span>Python</span><span>React</span><span>Node.js</span>
+          <span>Git</span><span>REST APIs</span><span>Cloud Computing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qualifications -->
+    <section class="section qualifications" id="qualifications" data-video="3">
+      <div class="container">
+        <h2 class="section-title reveal">Qualifications</h2>
+        <div class="qual-grid">
+          <article class="qual-card reveal">
+            <span class="qual-year">Present</span>
+            <h3>Cloud Computing</h3>
+            <p class="qual-inst">University / College Programme</p>
+            <p>Studying cloud hosting, frontend & backend deployment, and modern development workflows.</p>
+          </article>
+          <article class="qual-card reveal delay-1">
+            <span class="qual-year">Completed</span>
+            <h3>Information Technology</h3>
+            <p class="qual-inst">Secondary / Diploma Level</p>
+            <p>Foundation in programming, databases, and software development principles.</p>
+          </article>
+          <article class="qual-card reveal delay-2">
+            <span class="qual-year">Certifications</span>
+            <h3>Online & Professional Development</h3>
+            <p class="qual-inst">Self-paced learning</p>
+            <p>Web development, version control, and cloud platform certifications (in progress).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects" data-video="4">
+      <div class="container">
+        <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb p1"></div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>Full-stack portfolio with video backgrounds, animations, Vercel frontend and Render API.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>Node.js</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal delay-1">
+            <div class="project-thumb p2"></div>
+            <div class="project-body">
+              <h3>Cloud Deployment Demo</h3>
+              <p>Assignment project demonstrating real-world cloud development workflows.</p>
+              <div class="project-tags"><span>Vercel</span><span>Render</span><span>REST</span></div>
+            </div>
+          </article>
+          <article class="project-card reveal delay-2">
+            <div class="project-thumb p3"></div>
+            <div class="project-body">
+              <h3>Contact API Backend</h3>
+              <p>Express server handling contact form submissions with validation and CORS.</p>
+              <div class="project-tags"><span>Express</span><span>API</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="section experience" id="experience" data-video="5">
+      <div class="container">
+        <h2 class="section-title reveal">Work <span class="accent">Experience</span></h2>
+        <div class="timeline">
+          <article class="timeline-item left reveal">
+            <div class="timeline-date">Aug 2021 – Nov 2021</div>
+            <div class="timeline-marker"><span>SA</span></div>
+            <div class="timeline-card">
+              <h3>Swift Developer</h3>
+              <p class="company">Shamah Autism Center</p>
+              <ul>
+                <li>Developed iOS applications using Swift and UIKit.</li>
+                <li>Collaborated with cross-functional teams on feature delivery.</li>
+                <li>Improved app performance and user experience.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item right reveal">
+            <div class="timeline-date">Jan 2022 – Feb 2022</div>
+            <div class="timeline-marker"><span>N</span></div>
+            <div class="timeline-card">
+              <h3>React Developer</h3>
+              <p class="company">Natheel</p>
+              <ul>
+                <li>Built responsive React components and reusable UI patterns.</li>
+                <li>Integrated REST APIs and managed application state.</li>
+                <li>Participated in code reviews and agile sprints.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item left reveal">
+            <div class="timeline-date">2024 – Present</div>
+            <div class="timeline-marker"><span>DM</span></div>
+            <div class="timeline-card">
+              <h3>Full-Stack & Cloud Projects</h3>
+              <p class="company">Personal & Academic</p>
+              <ul>
+                <li>Deploying applications to Vercel and Render.</li>
+                <li>Building portfolio and cloud computing coursework.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" data-video="6">
+      <div class="container contact-container">
+        <div class="contact-form-wrap reveal">
+          <h2 class="contact-title">Contact<span class="accent">.</span></h2>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="What's your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="What's your email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="What do you want to say?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loader" hidden></span>
+            </button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="contact-direct">
+            <p>Or reach me directly:</p>
+            <a href="tel:+254764709993">📞 0764709993</a>
+            <span class="handle">dinna@170</span>
+          </div>
+        </div>
+        <div class="contact-visual reveal delay-1">
+          <div class="globe-wrap">
+            <div class="globe"></div>
+            <div class="globe-ring ring-1"></div>
+            <div class="globe-ring ring-2"></div>
+            <div class="globe-ring ring-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Dinna Michael · dinna@170 · <a href="tel:+254764709993">0764709993</a></p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

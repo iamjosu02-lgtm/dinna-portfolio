@@ -1,0 +1,8 @@
+node_modules/
+.env
+.DS_Store
+Thumbs.db
+*.log
+
+# Keep videos only in frontend/assets/videos (avoid duplicate in repo root)
+/wall*.mp4
